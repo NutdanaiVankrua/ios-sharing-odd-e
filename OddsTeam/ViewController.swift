@@ -30,7 +30,13 @@ extension ViewController: MyTableViewDelegate {
         let viewControllerB = storyboard
             .instantiateViewController(identifier: "ViewControllerB") as! ViewControllerB
         viewControllerB.data = "From A"
+
+//        navigationController?.pushViewController(viewControllerB, animated: true)
         present(viewControllerB, animated: true, completion: nil)
     }
+
+    // 1. Segue
+    // 2. Code -> present
+    // 3. NavigationController -> push
 
 }
