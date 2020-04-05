@@ -16,6 +16,9 @@
 		18F0104C2439762C0048313D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F0104A2439762C0048313D /* LaunchScreen.storyboard */; };
 		18F010572439762C0048313D /* OddsTeamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F010562439762C0048313D /* OddsTeamTests.swift */; };
 		18F010622439762C0048313D /* OddsTeamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F010612439762C0048313D /* OddsTeamUITests.swift */; };
+		18F010722439C64F0048313D /* MyTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F010712439C64F0048313D /* MyTableViewDataSource.swift */; };
+		18F010752439C7AA0048313D /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F010742439C7AA0048313D /* MyCustomCell.swift */; };
+		18F010772439C7C20048313D /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F010762439C7C10048313D /* MyCustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		18F0105D2439762C0048313D /* OddsTeamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OddsTeamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F010612439762C0048313D /* OddsTeamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddsTeamUITests.swift; sourceTree = "<group>"; };
 		18F010632439762C0048313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F010712439C64F0048313D /* MyTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewDataSource.swift; sourceTree = "<group>"; };
+		18F010742439C7AA0048313D /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
+		18F010762439C7C10048313D /* MyCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +107,15 @@
 		18F0103B243976240048313D /* OddsTeam */ = {
 			isa = PBXGroup;
 			children = (
+				18F010732439C7790048313D /* MyCustomCell */,
+				18F0104D2439762C0048313D /* Info.plist */,
 				18F0103C243976240048313D /* AppDelegate.swift */,
+				18F010712439C64F0048313D /* MyTableViewDataSource.swift */,
 				18F0103E243976240048313D /* SceneDelegate.swift */,
 				18F01040243976240048313D /* ViewController.swift */,
-				18F01042243976240048313D /* Main.storyboard */,
 				18F010482439762C0048313D /* Assets.xcassets */,
 				18F0104A2439762C0048313D /* LaunchScreen.storyboard */,
-				18F0104D2439762C0048313D /* Info.plist */,
+				18F01042243976240048313D /* Main.storyboard */,
 				18F01045243976240048313D /* OddsTeam.xcdatamodeld */,
 			);
 			path = OddsTeam;
@@ -129,6 +137,15 @@
 				18F010632439762C0048313D /* Info.plist */,
 			);
 			path = OddsTeamUITests;
+			sourceTree = "<group>";
+		};
+		18F010732439C7790048313D /* MyCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				18F010742439C7AA0048313D /* MyCustomCell.swift */,
+				18F010762439C7C10048313D /* MyCustomCell.xib */,
+			);
+			path = MyCustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +254,7 @@
 			files = (
 				18F0104C2439762C0048313D /* LaunchScreen.storyboard in Resources */,
 				18F010492439762C0048313D /* Assets.xcassets in Resources */,
+				18F010772439C7C20048313D /* MyCustomCell.xib in Resources */,
 				18F01044243976240048313D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,10 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F010752439C7AA0048313D /* MyCustomCell.swift in Sources */,
 				18F01041243976240048313D /* ViewController.swift in Sources */,
 				18F0103D243976240048313D /* AppDelegate.swift in Sources */,
 				18F01047243976240048313D /* OddsTeam.xcdatamodeld in Sources */,
 				18F0103F243976240048313D /* SceneDelegate.swift in Sources */,
+				18F010722439C64F0048313D /* MyTableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
