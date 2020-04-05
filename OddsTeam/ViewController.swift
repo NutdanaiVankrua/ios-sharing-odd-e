@@ -9,6 +9,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        myTableViewDataSource.delegate = self
+
         tableView.estimatedRowHeight = 40
         tableView.rowHeight = UITableView.automaticDimension
 
@@ -17,6 +19,18 @@ class ViewController: UIViewController {
 
         let nib = UINib(nibName: "MyCustomCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "myCell")
+    }
+
+}
+
+extension ViewController: MyTableViewDelegate {
+
+    func didSelectItem(_ indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewControllerB = storyboard
+            .instantiateViewController(identifier: "ViewControllerB") as! ViewControllerB
+        viewControllerB.data = "From A"
+        present(viewControllerB, animated: true, completion: nil)
     }
 
 }
